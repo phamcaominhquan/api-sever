@@ -1,0 +1,102 @@
+
+@if (productById$ | async; as product) {
+  <div class="container">
+
+    <div class="container-tren">
+      <!-- Hình bên trái -->
+      <div class="nua-trai-tren">
+        <img src="{{product.image}}" alt="{{product.name}}">
+      </div>
+
+      <!-- Nội dung bên phải -->
+      <div class="nua-phai-tren">
+        <mat-card class="example-card" appearance="outlined">
+          <mat-card-header>
+            <mat-card-title>{{ product.name }}</mat-card-title>
+            <mat-card-subtitle>Giá: {{ product.price }} VND</mat-card-subtitle>
+          </mat-card-header>
+
+          <mat-card-content>
+            <mat-card-title>Mô tả:</mat-card-title>
+            <p>{{ product.description }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+  </div>
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--@if( characterById$ | async; as item){-->
+<!--  <div class="container">-->
+
+<!--    <div class="container-tren">-->
+<!--      <div class="nua-trai-tren">-->
+<!--        <img mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu">-->
+<!--      </div>-->
+<!--      <div class="nua-phai-tren">-->
+<!--        <div class="nua-phai-tren-tren">-->
+<!--          <mat-card class="example-card" appearance="outlined">-->
+<!--            <mat-card-header>-->
+<!--              <div mat-card-avatar class="example-header-image"></div>-->
+<!--              <mat-card-title>{{item.name}}</mat-card-title>-->
+
+<!--              <mat-card-subtitle>{{item.race}}-{{item.gender}}</mat-card-subtitle>-->
+<!--              <mat-card-subtitle>Base Ki: {{item.ki}}</mat-card-subtitle>-->
+<!--              <mat-card-subtitle>Total Ki: {{item.maxKi}}</mat-card-subtitle>-->
+
+<!--              <mat-card-subtitle>Afilliation: {{item.affiliation}}</mat-card-subtitle>-->
+<!--            </mat-card-header>-->
+
+<!--            <mat-card-content>-->
+<!--              <mat-card-title>Description:</mat-card-title>-->
+<!--              <p>-->
+<!--                {{item.description}}-->
+<!--              </p>-->
+<!--            </mat-card-content>-->
+<!--          </mat-card>-->
+<!--        </div>-->
+<!--      <div class="nua-phai-tren-duoi">-->
+<!--      <img src="{{item.originPlanet?.image}}">-->
+<!--        <mat-card-title>{{item.originPlanet?.name}}</mat-card-title>-->
+
+<!--        <mat-card-subtitle>{{item.originPlanet?.description}}</mat-card-subtitle>-->
+<!--        <mat-card-subtitle>Is Destroyed: {{item.originPlanet?.isDestroyed}} </mat-card-subtitle>-->
+<!--      </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="container-duoi">-->
+<!--      <div class="container-duoi-tieu-de">-->
+<!--<h1>Transformation</h1>-->
+<!--      </div>-->
+<!--      <div class="transform">-->
+<!--        @for (transform of item.transformations; track transform.id) {-->
+<!--          <mat-card class="transform-card" appearance="outlined">-->
+<!--            <mat-card-header>-->
+<!--              <mat-card-title>{{ transform.name }}</mat-card-title>-->
+<!--              <mat-card-subtitle>KI: {{ transform.ki }}</mat-card-subtitle>-->
+<!--            </mat-card-header>-->
+<!--            <img mat-card-image [src]="transform.image" alt="{{ transform.name }}">-->
+<!--          </mat-card>-->
+<!--        }-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+
+<!--}-->
+

@@ -1,0 +1,30 @@
+.example-card {
+  max-width: 300px;
+  min-width: 300px;
+  background-color: cornflowerblue;
+  border: 3px solid black;
+img{
+  height: 300px;
+  object-fit: contain;
+}
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: lightskyblue;
+}
+
+.tieu-de-trang{
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+}

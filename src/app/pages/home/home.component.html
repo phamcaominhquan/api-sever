@@ -1,0 +1,45 @@
+
+<div class="tieu-de-trang">
+  <h1>DANH SÁCH SẢN PHẨM</h1>
+</div>
+<div class="container">
+  @for(item of (productsList$| async) ; track item.id){
+    <mat-card class="example-card" appearance="outlined" (click)="navigateToDetailProduct(item.id)">
+      <img mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{item.name}}</mat-card-title>
+        <mat-card-title>{{item.price}}</mat-card-title>
+        <mat-card-title>{{item.description}}</mat-card-title>
+
+      </mat-card-header>
+
+    </mat-card>
+  }
+</div>
+
+
+
+
+<!--  <h1>DANH SÁCH NHÂN VẬT</h1>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--@for(item of (characterList$| async)?.items ; track item.id){-->
+<!--<mat-card class="example-card" appearance="outlined" (click)="navigateToDetail(item.id)">-->
+<!--  <img mat-card-image src="{{item.image}}" alt="Photo of a Shiba Inu">-->
+<!--  <mat-card-header>-->
+<!--    <div mat-card-avatar class="example-header-image"></div>-->
+<!--    <mat-card-title>{{item.name}}</mat-card-title>-->
+<!--    <mat-card-subtitle></mat-card-subtitle>-->
+<!--    <mat-card-subtitle>{{item.race}}-{{item.gender}}</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>Base Ki:</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>{{item.ki}}</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>Total Ki:</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>{{item.maxKi}}</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>Afilliation:</mat-card-subtitle>-->
+<!--    <mat-card-subtitle>{{item.affiliation}}</mat-card-subtitle>-->
+<!--  </mat-card-header>-->
+
+<!--</mat-card>-->
+<!--}-->
+<!--</div>-->

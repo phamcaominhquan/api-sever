@@ -1,0 +1,152 @@
+//.container {
+//  width: 100vw;
+//  min-height: 100vh;
+//  background-color: #add8e6;
+//  padding: 20px;
+//}
+//
+//.container-tren {
+//  width: 100%;
+//  height: 900px;
+//  display: flex;
+//  gap: 20px;
+//}
+//
+//.nua-trai-tren {
+//  height: 100%;
+//  width: 50%;
+//  background-color: #b0e0e6;
+//  display: flex;
+//  justify-content: center;
+//  align-items: center;
+//  border: 2px solid black;
+//  border-radius: 10px;
+//  padding: 10px;
+//
+//  img {
+//    max-height: 750px;
+//    border: 2px solid black;
+//    border-radius: 10px;
+//    background-color: white;
+//  }
+//}
+//
+//.nua-phai-tren {
+//  height: 100%;
+//  width: 50%;
+//  background-color: #e0ffff;
+//  display: flex;
+//  flex-direction: column;
+//  gap: 20px;
+//  border: 2px solid black;
+//  border-radius: 10px;
+//  padding: 10px;
+//}
+//
+//.example-card {
+//  background-color: white;
+//  border: 2px solid black;
+//  border-radius: 10px;
+//}
+//
+//.nua-phai-tren-duoi {
+//  background-color: white;
+//  border: 2px solid black;
+//  border-radius: 10px;
+//  text-align: center;
+//  padding: 10px;
+//
+//  img {
+//    max-height: 150px;
+//    border: 2px solid black;
+//    border-radius: 10px;
+//    margin-bottom: 8px;
+//    background-color: white;
+//  }
+//}
+//
+//.container-duoi {
+//  margin-top: 20px;
+//}
+//
+//.container-duoi-tieu-de h1 {
+//  color: black;
+//  text-align: center;
+//  margin-bottom: 20px;
+//}
+//
+//.transform {
+//  display: flex;
+//  gap: 1rem;
+//  flex-wrap: wrap;
+//}
+//
+//.transform-card {
+//  background-color: white;
+//  border: 2px solid black;
+//  border-radius: 10px;
+//  width: 200px;
+//  transition: transform 0.2s ease, box-shadow 0.2s ease;
+//
+//  img {
+//    max-width: 200px;
+//    object-fit: contain;
+//  }
+//
+//  &:hover {
+//    transform: scale(1.05);
+//    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+//  }
+//}
+
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #add8e6;
+  padding: 20px;
+}
+
+.container-tren {
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  gap: 20px;
+}
+
+.nua-trai-tren {
+  flex: 1;
+  background-color: #b0e0e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nua-trai-tren img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.nua-phai-tren {
+  flex: 1;
+  background-color: #e0ffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.example-card {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+}

@@ -1,0 +1,55 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.khung-login{
+  width: 70%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+}
+
+.nua-khung-trai{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.nua-khung-phai{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 5%;
+
+}
+
+.nua-khung-phai div {
+  width: 100%;
+  text-align: center;
+}
+
+.nua-khung-phai button {
+  width: 90%;
+  background-color: deepskyblue;
+  color: black;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.nua-khung-phai button:hover {
+  background-color: dodgerblue; /* màu đậm hơn khi hover */
+}
