@@ -103,8 +103,10 @@
 .container {
   width: 100vw;
   min-height: 100vh;
-  background-color: #add8e6;
+  background-color: lightsalmon;
   padding: 20px;
+  display: flex;
+
 }
 
 .container-tren {
@@ -112,11 +114,16 @@
   min-height: 600px;
   display: flex;
   gap: 20px;
+  image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
 }
 
 .nua-trai-tren {
   flex: 1;
-  background-color: #b0e0e6;
+  background-color: lightsalmon;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,7 +143,7 @@
 
 .nua-phai-tren {
   flex: 1;
-  background-color: #e0ffff;
+  background-color: lightsalmon;
   display: flex;
   flex-direction: column;
   gap: 20px;

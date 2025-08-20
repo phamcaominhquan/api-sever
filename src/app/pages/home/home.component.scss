@@ -1,7 +1,7 @@
 .example-card {
   max-width: 300px;
   min-width: 300px;
-  background-color: cornflowerblue;
+  background-color: darkorange;
   border: 3px solid black;
 img{
   height: 300px;
@@ -20,11 +20,11 @@ img{
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  background-color: lightskyblue;
+  background-color: lightsalmon;
 }
 
-.tieu-de-trang{
-  display: flex;
-  justify-content: center;
-  background-color: lightskyblue;
-}
+//.tieu-de-trang{
+//  display: flex;
+//  justify-content: center;
+//  background-color: lightskyblue;
+//}

@@ -11,6 +11,8 @@ import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import * as authEffects from './ngrx/effect/auth.effects'
 import {authReducer} from './ngrx/reducer/auth.reducer';
+import {productReducer} from './ngrx/reducer/product.reducer';
+import * as productEffects from './ngrx/effect/product.effect';
 
 
 export const appConfig: ApplicationConfig = {
@@ -18,12 +20,14 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideEffects(
       CharacterEffect,
-      authEffects
+      authEffects,
+      productEffects,
     ),
     provideStore(
       {
         character: characterReducer,
-        auth: authReducer
+        auth: authReducer,
+        product: productReducer,
       }
 
     ),
@@ -38,6 +42,6 @@ export const appConfig: ApplicationConfig = {
         messagingSenderId: "964632053755",
         measurementId: "G-N3CE8EYWMB"
       })),
-        provideAuth(() => getAuth())
+    provideAuth(() => getAuth())
   ]
 };
